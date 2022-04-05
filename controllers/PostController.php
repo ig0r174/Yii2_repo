@@ -9,7 +9,7 @@ class PostController extends Controller
 
     public function create()
     {
-
+        $model = new Post();
     }
 
     public function list()

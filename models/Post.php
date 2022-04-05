@@ -2,9 +2,9 @@
 
 namespace app\models;
 
-use yii\base\Model;
+use \yii\db\ActiveRecord;
 
-class Post extends Model
+class Post extends ActiveRecord
 {
 
     public $body;
@@ -12,6 +12,11 @@ class Post extends Model
     public $dateCreate;
     public $author;
     public $status;
+
+    public static function tableName()
+    {
+        return 'post';
+    }
 
     public function rules()
     {

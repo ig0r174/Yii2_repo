@@ -2,7 +2,9 @@
 
 namespace app\interfaces;
 
-interface Moderator {
+interface Moderator
+{
     public function publish($post): bool;
+
     public function unPublish($post): bool;
 }
